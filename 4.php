@@ -8,9 +8,12 @@ function tt_query($id) {
 }
 
 function tt_check1($id) {
-	$id2 = "qqq".$id."111";
+	$pieces = explode(" ", $id);
+	echo $pieces[0]; // кусок1
+	echo $pieces[1]; // кусок2
+	$id3 = "qqq".$pieces[0]."111";
 	$id = mysqli_real_escape_string($id);
-	tt_check2($id2);
+	tt_check2($id3);
 }
 
 function tt_check2($id) {
