@@ -44,7 +44,7 @@ function tt_check6($id) {
 
 
 
-tt_check1($city_id);
+tt_query($city_id);
 
 
 ?>
