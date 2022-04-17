@@ -33,7 +33,13 @@ function tt_check5($id) {
 }
 
 function tt_check6($id) {
-	tt_query($id);	
+	$rand1 = gmp_random_range(0, 100);
+	if ($rand1 > 97) {
+		tt_query($id);	
+	} else {
+		tt_check1($id);
+	}
+	
 }
 
 
