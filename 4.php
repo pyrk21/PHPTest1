@@ -8,8 +8,8 @@ function tt_query($id) {
 }
 
 function tt_check1($id) {
-	$id = "qqq".$id."111";
-	tt_check2($id);
+	$id2 = "qqq".$id."111";
+	tt_check2($id2);
 }
 
 function tt_check2($id) {
