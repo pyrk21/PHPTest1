@@ -8,6 +8,7 @@ function tt_query($id) {
 }
 
 function tt_check1($id) {
+	$id = mysqli_real_escape_string($id);
 	$id2 = "qqq".$id."111";
 	tt_check2($id2);
 }
